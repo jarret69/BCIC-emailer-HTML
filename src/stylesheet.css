@@ -1,0 +1,187 @@
+:root{
+    --main-red: #e21e36;
+    --gray:#bdbec0;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  /*width: 640px;
+  height: 700px;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: #e6e6e6;
+    
+}
+
+p{
+    line-height: 24px; 
+    font-size: 14px;
+}
+
+.main{
+    margin: auto;
+    max-width: 870px;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "section-a section-a section-b ."
+      "section-a section-a section-b ."
+      "section-c section-c section-d .";
+  }
+  
+  .section-a { grid-area: section-a; }
+  
+  .section-b { grid-area: section-b; }
+  
+  .section-c { grid-area: section-c; }
+  
+  .section-d { grid-area: section-d; }
+
+  h1{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+
+
+
+  #logo{
+      width: 100%;
+      padding: 10px;
+      /*margin-left: 16px;*/
+      background: #fff;
+  }
+
+  .section-a{
+    padding-left: 3rem;
+    width: 100%;
+    max-width: 620px;
+    max-height: 760px;
+    background-image: url(./images/olga-thelavart-vS3idIiYxX0-unsplash.jpg);
+    background-repeat: no-repeat;
+  }
+
+  #customer{
+    padding: 1rem 0 1rem 0;
+    font-size: 13px;
+  }
+
+  .section-a .coverage{
+      padding: 1rem;
+  }
+
+  .section-a .more-info{
+      display: flex;
+      padding-top: 1rem;
+  }
+
+  .more-info .list-sign{
+      width: 50%;
+  }
+
+  .list-container {
+    padding-left: 3.5rem;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: var(--main-red);
+    font-weight: 900;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1.2em;
+  }
+
+  .lower-a{
+    padding-top: 1rem;
+}
+
+.lower-a #Signature{
+    width: 140px;
+}
+.lower-a p{
+    padding-top: 1rem;
+}
+.lower-a span p{
+   font-size: 12px !important;
+}
+
+.lower-a #Signature{
+    width: 140px;
+}
+
+  .more-info .mam-img{
+      width: 50%;
+  }
+  
+  .more-info .mam-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-b{
+    max-width: 738px;
+    background: #bdbec0;
+}
+
+
+
+.section-b .women {
+    width: 100%;
+}
+
+.section-c{
+    padding: 2rem;
+    max-width: 620px;
+    background: #bdbec0;
+}
+
+.section-c .footer-left{
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: auto;
+}
+.section-c .footer-left h4{
+    padding-top: 1rem;
+}
+
+.section-c .footer-left h4 span{
+    color: var(--main-red);
+    font-weight: 600 !important;
+}
+
+.social{
+    color: var(--main-red);
+    font-size: 24px;
+    
+}
+
+.section-d{
+    padding: 2rem;
+    max-width: 620px;
+    background: #bdbec0;
+    text-align: center;
+}
+
+.info-right{
+    padding: 2rem;
+    background: #bdbec0;
+    text-align: center;
+}
